@@ -1,0 +1,46 @@
+
+<view class="header">
+  <input type="text" 
+    class="header-input" 
+    placeholder="Java-Android-iOS" 
+    placeholder-class="header-input-placeholder"
+    bindinput="handleSearchIcon"/>
+  <icon type="search" 
+    size="14"
+    class="header-input-icon"
+    wx:if="{{showSearchIcon}}"></icon>
+</view>
+<view class="nav">
+  <view class="nav-item">
+    <image class="nav-img" src="../../resources/recommend.png"/>
+    推荐
+    <view class="nav-active"></view>
+  </view>
+  <view class="nav-item">
+    <image class="nav-img" src="../../resources/path.png"/>
+    路径
+  </view>
+  <view class="nav-item">
+    <image class="nav-img" src="../../resources/action.png"/>
+    实战
+  </view>
+  <view class="nav-item">
+    <image class="nav-img" src="../../resources/about.png"/>
+    活动
+  </view>
+</view>
+
+<swiper 
+  class="swiper"
+  previous-margin="18rpx"
+  next-margin="18rpx"
+  circular="{{true}}"
+  autoplay="{{true}}"
+>
+  <swiper-item class="swiper-item" wx:for="{{swiperList}}" wx:key="*this">
+    <image class="swiper-img" src="{{item.imgUrl}}"></image>
+  </swiper-item>
+</swiper>
+<view class="project">
+  <view class="project-title">实战推荐</view>
+</view>

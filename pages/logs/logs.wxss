@@ -1,0 +1,9 @@
+/* rpx 默认宽度是750rpx */
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}

@@ -1,0 +1,16 @@
+<!--logs.wxml-->
+<!--index.wxml-->
+<view bindtap="changeText">{{motto}}</view>
+<!-- include -->
+<include src="./content.wxml"/>
+<!-- wx:key 提高渲染效率 -->
+<view wx:for="{{names}}"
+      wx:key="*this">
+  {{item.name}}{{index}}
+</view>
+<view class="container log-list">
+<!-- block 占位符 不会渲染到页面上 -->
+  <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log.date}}</text>
+  </block>
+</view>

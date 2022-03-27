@@ -1,0 +1,74 @@
+.header{
+  position: relative;
+}
+.header-input{
+  line-height: 72rpx;
+  padding: 0 36rpx;
+  margin: 22rpx 36rpx 14rpx 36rpx;
+  border: 1rpx solid #D9DDE1;
+  border-radius: 36rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+.header-input-placeholder{
+  color: rgba(133,133,133,0.6);
+}
+.header-input-icon{
+  position: absolute;
+  left: 50%;
+  top: 12rpx;
+  transform: translate3d(-152rpx,0,0);
+  color: rgba(133,133,133,0.6);
+}
+
+.nav{
+  display: flex;
+  line-height: 112rpx;
+  margin-bottom: 6rpx;
+}
+.nav-item{
+  position: relative;
+  flex: 1;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 32rpx;
+  color: #2B333B;
+}
+.nav-img{
+  position: relative;
+  top: 8rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+.nav-active{
+  position: absolute;
+  width: 32rpx;
+  height: 8rpx;
+  border-radius: 4rpx;
+  background: #F01414;
+  left: 50%;
+  transform: translateX(-16rpx);
+  bottom: 20rpx;
+}
+.swiper{
+  height: 234rpx;
+}
+.swiper-item{
+  box-sizing: border-box;
+  padding: 0 6rpx;
+}
+.swiper-img{
+  width: 708rpx;
+  border-radius: 12rpx;
+  height: 234rpx;
+}
+.project{
+  margin-top: 32rpx;
+  margin-left: 40rpx;
+}
+.project-title{
+  line-height: 32rpx;
+  font-size: 28rpx;
+  color:#2B333B;
+  font-weight: bold;
+}
